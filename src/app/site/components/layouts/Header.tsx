@@ -11,7 +11,7 @@ import {
   Video,
   BookOpen,
   Info,
-  Target,
+  Target, 
   HelpCircle,
 } from "lucide-react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
