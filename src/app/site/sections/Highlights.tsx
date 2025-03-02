@@ -23,7 +23,7 @@ const Carousel: React.FC = () => {
     loop: false,
     slidesToScroll: 1,
     align: "center",
-  });
+  }) as [React.RefObject<HTMLDivElement>, import("embla-carousel").EmblaCarouselType | null];  
 
   const { setCurrentIndex } = useCarouselStore();
   const [canScrollPrev, setCanScrollPrev] = useState(false);
@@ -50,6 +50,10 @@ const Carousel: React.FC = () => {
   
     emblaApi.on("select", onSelect);
     onSelect();
+  
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
   }, [emblaApi, onSelect]);
   
 
@@ -63,14 +67,16 @@ const Carousel: React.FC = () => {
       </div>
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex gap-x-6 mt-8 mx-auto md:max-w-full max-w-[200px]">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="flex-[0_0_90%] md:flex-[0_0_45%] lg:flex-[0_0_25%] mx-auto"
-              >
-              <CarouselItem {...item} />
-            </div>
-          ))}
+        {items?.length > 0 &&
+  items.map((item) => (
+    <div
+      key={item.id}
+      className="flex-[0_0_90%] md:flex-[0_0_45%] lg:flex-[0_0_25%] mx-auto"
+    >
+      <CarouselItem {...item} />
+    </div>
+  ))}
+
         </div>
       </div>
 
