@@ -11,11 +11,11 @@ import {
   Video,
   BookOpen,
   Info,
-  Target, 
+  Target,
   HelpCircle,
 } from "lucide-react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import DropdownMenuItem from "@/site/components/ui/DropdownMenuItem";
+import DropdownMenuItem from "@/site/components/ui/DropdownMenuItem"
 import Logo from "@/assets/logo.png";
 import Image from "next/image";
 
