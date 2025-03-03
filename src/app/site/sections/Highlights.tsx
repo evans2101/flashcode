@@ -29,7 +29,7 @@ const Carousel: React.FC = () => {
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(true);
 
-  const onSelect = useCallback(() => {
+  const onSelect = useCallback(() => { 
     if (!emblaApi) return;
 
     const selectedIndex = emblaApi.selectedScrollSnap();
