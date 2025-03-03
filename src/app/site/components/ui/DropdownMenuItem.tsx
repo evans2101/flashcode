@@ -28,7 +28,7 @@ const DropdownMenuItem: React.FC<DropdownMenuItemProps> = ({
     <>
       <div className="md:hidden w-full">
         <button
-          className="w-full text-left flex justify-between items-center py-2 text-gray-700 dark:text-gray-200"
+          className="w-full text-left flex justify-between items-center py-2 text-white dark:text-gray-200"
           onClick={() => setIsOpen(!isOpen)}
         >
           {label} {isOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
@@ -57,7 +57,7 @@ const DropdownMenuItem: React.FC<DropdownMenuItemProps> = ({
 
       <div className="hidden md:block">
         <DropdownMenu.Root>
-          <DropdownMenu.Trigger className="text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition">
+          <DropdownMenu.Trigger className="text-white dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition">
             {label} ▾
           </DropdownMenu.Trigger>
           <DropdownMenu.Content className="bg-black border border-gray-700 text-white shadow-lg rounded-xl p-2 mt-2 max-h-auto overflow-hidden">

@@ -83,7 +83,7 @@ const Header = () => {
       <div className="container w-full max-w-7xl mx-auto py-6 flex items-center justify-between">
         <Link href="/">
           <motion.div
-            className="text-2xl font-bold text-gray-900 dark:text-white pl-6 md:pl-0"
+            className="text-2xl font-bold text-white dark:text-white pl-6 md:pl-0"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
@@ -137,7 +137,7 @@ const Header = () => {
         <div className="md:hidden bg-[#0C0D0D] h-screen absolute top-full left-0 w-full shadow-lg z-50 py-4 px-6 flex flex-col space-y-3">
           <Link
             href="/"
-            className="text-gray-900 dark:text-white"
+            className="text-white dark:text-white"
             onClick={toggleMenu}
           >
             Beranda
@@ -149,7 +149,7 @@ const Header = () => {
           />
           <Link
             href="/blog"
-            className="text-gray-900 dark:text-white"
+            className="text-white dark:text-white"
             onClick={toggleMenu}
           >
             Blog
@@ -165,19 +165,19 @@ const Header = () => {
           <div className="absolute bottom-10 left-6 flex gap-4">
             <FaFacebook
               size={24}
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-500"
+              className="text-white dark:text-gray-200 hover:text-blue-500"
             />
             <FaTwitter
               size={24}
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-400"
+              className="text-white dark:text-gray-200 hover:text-blue-400"
             />
             <FaInstagram
               size={24}
-              className="text-gray-700 dark:text-gray-200 hover:text-pink-500"
+              className="text-white dark:text-gray-200 hover:text-pink-500"
             />
             <FaLinkedin
               size={24}
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-700"
+              className="text-white dark:text-gray-200 hover:text-blue-700"
             />
           </div>
         </div>
