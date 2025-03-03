@@ -95,7 +95,7 @@ const Header = () => {
         <nav className="hidden md:flex space-x-8">
           <Link
             href="/"
-            className="text-white dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
+            className="text-white dark:text-gray-200 hover:bg-gray-100 hover:text-gray-100  dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
           >
             Beranda
           </Link>
@@ -108,7 +108,7 @@ const Header = () => {
 
           <Link
             href="/blog"
-            className="text-white dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
+            className="text-white dark:text-gray-200 hover:bg-gray-100 hover:text-gray-100  dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
           >
             Blog
           </Link>
