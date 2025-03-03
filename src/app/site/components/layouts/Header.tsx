@@ -95,7 +95,7 @@ const Header = () => {
         <nav className="hidden md:flex space-x-8">
           <Link
             href="/"
-            className="text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
+            className="text-white dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
           >
             Beranda
           </Link>
@@ -108,7 +108,7 @@ const Header = () => {
 
           <Link
             href="/blog"
-            className="text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
+            className="text-white dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition"
           >
             Blog
           </Link>
@@ -124,7 +124,7 @@ const Header = () => {
 
         <div className="md:hidden flex items-center gap-4 px-4">
           <button
-            className="text-gray-700 dark:text-gray-200"
+            className="text-white dark:text-gray-200"
             onClick={toggleMenu}
           >
             {isOpen ? <X size={26} /> : <Menu size={26} />}
@@ -134,7 +134,7 @@ const Header = () => {
       <hr className="border-t border-white" />
 
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-black h-screen absolute top-full gap-2 left-0 w-full shadow-lg z-50 py-4 px-6 flex flex-col space-y-3">
+        <div className="md:hidden bg-[#0C0D0D] h-screen absolute top-full left-0 w-full shadow-lg z-50 py-4 px-6 flex flex-col space-y-3">
           <Link
             href="/"
             className="text-gray-900 dark:text-white"

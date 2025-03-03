@@ -35,7 +35,7 @@ const DropdownMenuItem: React.FC<DropdownMenuItemProps> = ({
         </button>
 
         {isOpen && (
-          <div className="bg-black text-white shadow-lg max-h-screen overflow-y-scroll overscroll-contain">
+          <div className="bg-black text-white shadow-lg max-h-screen overflow-y-scroll overscroll-hidden">
             {items.map(({ icon: Icon, title, desc }, index) => (
               <div
                 key={index}
@@ -60,8 +60,8 @@ const DropdownMenuItem: React.FC<DropdownMenuItemProps> = ({
           <DropdownMenu.Trigger className="text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition">
             {label} ▾
           </DropdownMenu.Trigger>
-          <DropdownMenu.Content className="bg-black border border-gray-700 text-white shadow-lg rounded-xl p-2 mt-2 max-h-96 overflow-y-scroll overscroll-contain">
-            {items.map(({ icon: Icon, title, desc }, index) => (
+          <DropdownMenu.Content className="bg-black border border-gray-700 text-white shadow-lg rounded-xl p-2 mt-2 max-h-auto overflow-hidden">
+          {items.map(({ icon: Icon, title, desc }, index) => (
               <DropdownMenu.Item
                 key={index}
                 className="flex items-center gap-4 p-3 rounded-xl transition focus:outline-none"
