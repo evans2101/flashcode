@@ -66,7 +66,7 @@ const DropdownMenuItem: React.FC<DropdownMenuItemProps> = ({
                 key={index}
                 className="flex items-center gap-4 p-3 rounded-xl transition focus:outline-none"
               >
-                <div className="border border-gray-500 rounded-xl p-2 transition hover:bg-white hover:border-none">
+                <div className="border border-gray-500 rounded-xl p-2 transition hover:bg-gray-700 hover:border-none">
                   <Icon
                     size={24}
                     className="text-gray-200 hover:text-black transition"
