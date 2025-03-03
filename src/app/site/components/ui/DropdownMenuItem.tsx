@@ -57,7 +57,7 @@ const DropdownMenuItem: React.FC<DropdownMenuItemProps> = ({
 
       <div className="hidden md:block">
         <DropdownMenu.Root>
-          <DropdownMenu.Trigger className="text-white dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition">
+          <DropdownMenu.Trigger className="text-gray-200 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-4 py-2 rounded-4xl transition">
             {label} ▾
           </DropdownMenu.Trigger>
           <DropdownMenu.Content className="bg-black border border-gray-700 text-white shadow-lg rounded-xl p-2 mt-2 max-h-auto overflow-hidden">
@@ -69,7 +69,7 @@ const DropdownMenuItem: React.FC<DropdownMenuItemProps> = ({
                 <div className="border border-gray-500 rounded-xl p-2 transition hover:bg-white hover:border-none">
                   <Icon
                     size={24}
-                    className="text-white hover:text-black transition"
+                    className="text-gray-200 hover:text-black transition"
                   />
                 </div>
                 <div>
